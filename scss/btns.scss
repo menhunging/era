@@ -1,0 +1,42 @@
+.btn {
+  -webkit-appearance: none;
+  border-radius: 0;
+  position: relative;
+  color: $colorBlack;
+  border: 1px solid transparent;
+  display: inline-block;
+  transition: all 0.3s;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  padding: 18px 20px;
+
+  @include responsive1279 {
+    padding: 15px 20px;
+  }
+
+  @include responsive767 {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 13px 15px;
+  }
+
+  &-gradient {
+    transition: all 0.3s;
+    color: $colorWhite;
+    background: linear-gradient(
+      90deg,
+      #ad6f31 0%,
+      #ffc480 21.5%,
+      #d37d00 46.5%,
+      #ffc57f 72.5%,
+      #b26210 100%
+    );
+    border-radius: 3px;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+}

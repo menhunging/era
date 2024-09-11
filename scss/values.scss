@@ -1,0 +1,105 @@
+$fontMain: "Raleway";
+$fontJost: "Jost";
+$fontMont: "Mont";
+
+$colorWhite: rgba(255, 255, 255, 1);
+$colorWhite-a9: rgba(255, 255, 255, 0.9);
+$colorWhite-a8: rgba(255, 255, 255, 0.8);
+$colorWhite-a7: rgba(255, 255, 255, 0.7);
+$colorWhite-a6: rgba(255, 255, 255, 0.6);
+$colorWhite-a5: rgba(255, 255, 255, 0.5);
+$colorWhite-a4: rgba(255, 255, 255, 0.4);
+$colorWhite-a3: rgba(255, 255, 255, 0.3);
+$colorWhite-a2: rgba(255, 255, 255, 0.2);
+$colorWhite-a1: rgba(255, 255, 255, 0.1);
+
+$colorBlack: rgba(27, 27, 27, 1);
+$colorBlack-a9: rgba(27, 27, 27, 0.9);
+$colorBlack-a8: rgba(27, 27, 27, 0.8);
+$colorBlack-a7: rgba(27, 27, 27, 0.7);
+$colorBlack-a6: rgba(27, 27, 27, 0.6);
+$colorBlack-a5: rgba(27, 27, 27, 0.5);
+$colorBlack-a4: rgba(27, 27, 27, 0.4);
+$colorBlack-a3: rgba(27, 27, 27, 0.3);
+$colorBlack-a2: rgba(27, 27, 27, 0.2);
+$colorBlack-a1: rgba(27, 27, 27, 0.1);
+$colorBlack-a05: rgba(27, 27, 27, 0.05);
+
+$colorGray: rgb(113, 115, 116); // #717374
+$colorBackground: rgba(246, 246, 246); // #f6f6f6
+
+$responsive1699: "1699px";
+$responsive1599: "1599px";
+$responsive1439: "1439px";
+$responsive1279: "1279px";
+$responsive1023: "1023px";
+$responsive767: "767px";
+$responsive639: "639px";
+$responsive479: "479px";
+$responsive389: "389px";
+
+@mixin boxShadowDefault {
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+// @media responsive
+
+@mixin responsiveMinWidth768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin responsive1699 {
+  @media (max-width: $responsive1699) {
+    @content;
+  }
+}
+
+@mixin responsive1599 {
+  @media (max-width: $responsive1599) {
+    @content;
+  }
+}
+
+@mixin responsive1439 {
+  @media (max-width: $responsive1439) {
+    @content;
+  }
+}
+
+@mixin responsive1279 {
+  @media (max-width: $responsive1279) {
+    @content;
+  }
+}
+
+@mixin responsive1023 {
+  @media (max-width: $responsive1023) {
+    @content;
+  }
+}
+
+@mixin responsive767 {
+  @media (max-width: $responsive767) {
+    @content;
+  }
+}
+
+@mixin responsive639 {
+  @media (max-width: $responsive639) {
+    @content;
+  }
+}
+
+@mixin responsive479 {
+  @media (max-width: $responsive479) {
+    @content;
+  }
+}
+
+@mixin responsive389 {
+  @media (max-width: $responsive389) {
+    @content;
+  }
+}
