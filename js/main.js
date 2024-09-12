@@ -25,31 +25,47 @@ $(document).ready(function () {
     }
   }
 
-  if ($(".projects-tabs__slider").length > 0) {
-    const swiper = new Swiper(".projects-tabs__slider", {
+  if ($("nav").length > 0) {
+    $("nav a").on("click", function (event) {
+      event.preventDefault();
+      menuAnhor($(this).attr("href"));
+    });
+
+    function menuAnhor(target) {
+      if ($(".burger").hasClass("opened")) {
+        $(".burger").removeClass("opened");
+        $(".menu").stop().slideUp();
+      }
+
+      $("html, body").animate({ scrollTop: $(target).offset().top - 100 }, 150);
+    }
+  }
+
+  if ($(".reviews-slider").length > 0) {
+    const swiper = new Swiper(".reviews-slider", {
       slidesPerView: 3,
       spaceBetween: 32,
       watchSlidesProgress: true,
       loop: false,
       navigation: {
-        prevEl: ".projects-tabs__tabs .swiperBtnPrev",
-        nextEl: ".projects-tabs__tabs .swiperBtnNext",
+        prevEl: ".reviews__conrtrols .swiperBtnPrev",
+        nextEl: ".reviews__conrtrols .swiperBtnNext",
       },
       breakpoints: {
         0: {
           slidesPerView: 1.2,
           spaceBetween: 16,
         },
-        390: {
+        480: {
           slidesPerView: 1.5,
           spaceBetween: 16,
         },
         640: {
-          slidesPerView: 2.3,
+          slidesPerView: 1.8,
           spaceBetween: 16,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 16,
         },
         1280: {
@@ -60,13 +76,35 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".tabs").length > 0) {
-    $(".tabs").tabslet({
+  if ($(".design__tabs").length > 0) {
+    $(".design__tabs .tabs").tabslet({
       mouseevent: "click",
       attribute: "href",
       animation: true,
+      controls: {
+        prev: ".design__prev",
+        next: ".design__next",
+      },
     });
   }
+
+  if ($(".faq").length > 0) {
+    $(".faq__head").on("click", function () {
+      $(this)
+        .toggleClass("opened")
+        .parents(".faq__item")
+        .find(".faq__body")
+        .stop()
+        .slideToggle();
+    });
+  }
+
+  if ($(".thisYear").length > 0) {
+    let date = new Date();
+    $(".thisYear").text(date.getFullYear());
+  }
+
+  // ..........................................
 
   if ($(".phone-input").length > 0) {
     $(".phone-input").map(function () {
@@ -78,11 +116,6 @@ $(document).ready(function () {
         clearIncomplete: true,
       });
     });
-  }
-
-  if ($(".thisYear").length > 0) {
-    let date = new Date();
-    $(".thisYear").text(date.getFullYear());
   }
 
   if ($(".modal").length > 0) {

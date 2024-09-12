@@ -1,1 +1,164 @@
-.footer{}
+.footer {
+  background-color: $colorBackground;
+  padding: 35px 0;
+
+  @include responsive1279 {
+    padding: 20px 0;
+  }
+
+  .footer_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive767 {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  .logo {
+    @include responsive767 {
+      order: 2;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-skip-ink: none;
+    transition: text-decoration 0.3s;
+    color: $colorBlack;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration-color: $colorBlack;
+    }
+  }
+}
+
+.footer-menu {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+
+  @include responsive1279 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @include responsive1023 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include responsive767 {
+    order: 1;
+    font-size: 12px;
+    line-height: 14px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    display: flex;
+    gap: 85px;
+
+    @include responsive1279 {
+      gap: 30px;
+    }
+
+    @include responsive767 {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      width: 100%;
+    }
+  }
+
+  li {
+    @include responsive767 {
+      width: calc(100% / 3 - 30px);
+      white-space: nowrap;
+    }
+  }
+}
+
+.footer-bottom {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 86px;
+  margin-top: 130px;
+
+  @include responsive1279 {
+    font-size: 12px;
+    line-height: 14px;
+    align-items: flex-end;
+    margin-top: 100px;
+  }
+
+  @include responsive767 {
+    order: 3;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-bottom__center {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+
+    .copy {
+      font-family: $fontJost;
+    }
+
+    @include responsive767 {
+      text-align: left;
+      align-items: flex-start;
+      margin: 0;
+      order: 2;
+      margin-top: 15px;
+    }
+  }
+
+  .footer-bottom__right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include responsive1279 {
+      top: auto;
+      bottom: 0;
+      gap: 16px;
+    }
+
+    @include responsive767 {
+      position: relative;
+      text-align: left;
+      align-items: flex-start;
+      order: 1;
+    }
+
+    strong {
+      font-family: $fontJost;
+      font-weight: 400;
+    }
+  }
+}

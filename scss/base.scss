@@ -694,3 +694,32 @@ section {
   .caption {
   }
 }
+
+.site-link {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  color: $colorBlack;
+  text-transform: uppercase;
+  transition: text-decoration 0.3s;
+
+  &:hover {
+    text-decoration-color: $colorBlack;
+  }
+
+  @include after {
+    position: relative;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='21' height='9' viewBox='0 0 21 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.125 4.4997H20.125M20.125 4.4997L16.7404 7.88431M20.125 4.4997L16.7404 1.11514' stroke='black' stroke-width='0.5'/%3e%3c/svg%3e ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 10px;
+  }
+}
