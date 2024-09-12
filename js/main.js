@@ -34,6 +34,7 @@ $(document).ready(function () {
     function menuAnhor(target) {
       if ($(".burger").hasClass("opened")) {
         $(".burger").removeClass("opened");
+        $("body").removeClass("hidden");
         $(".menu").stop().slideUp();
       }
 
