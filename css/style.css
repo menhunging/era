@@ -1838,6 +1838,7 @@ h4,
 }
 .values-list__icon {
   background-image: url("./../img/bg-values.png");
+  background-image: image-set(url("./../img/bg-values.webp") type("image/webp"), url("./../img/bg-values.png") type("image/png"));
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2615,6 +2616,7 @@ h4,
   position: relative;
   margin: 73px auto 0;
   background-image: url("../img/notebook.png");
+  background-image: image-set(url("../img/notebook.webp") type("image/webp"), url("../img/notebook.png") type("image/png"));
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
