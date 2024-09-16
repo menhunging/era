@@ -77,6 +77,25 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".cases-slider").length > 0) {
+    const swiper = new Swiper(".cases-slider", {
+      slidesPerView: 1,
+      spaceBetween: 32,
+      watchSlidesProgress: true,
+      loop: true,
+      navigation: {
+        // prevEl: ".reviews__conrtrols .swiperBtnPrev",
+        nextEl: ".cases__bottom .site-link",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+      },
+    });
+  }
+
   if ($(".design__tabs").length > 0) {
     $(".design__tabs .tabs").tabslet({
       mouseevent: "click",
@@ -103,6 +122,12 @@ $(document).ready(function () {
   if ($(".thisYear").length > 0) {
     let date = new Date();
     $(".thisYear").text(date.getFullYear());
+  }
+
+  if ($("[data-aos]").length > 0) {
+    AOS.init({
+      delay: 0,
+    });
   }
 
   // ..........................................
@@ -153,12 +178,6 @@ $(document).ready(function () {
     Fancybox.bind("[data-fancybox]", {
       speedIn: 600,
       speedOut: 600,
-    });
-  }
-
-  if ($("[data-aos]").length > 0) {
-    AOS.init({
-      delay: 0,
     });
   }
 });

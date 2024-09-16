@@ -354,8 +354,9 @@
       position: relative;
       padding-left: 27px;
 
-      @include responsive1279 {
-        padding-left: 23px;
+      span {
+        font-family: $fontJost;
+        color: $colorBlack-a7;
       }
 
       & + li {
@@ -364,6 +365,10 @@
         @include responsive1279 {
           margin-top: 12px;
         }
+      }
+
+      @include responsive1279 {
+        padding-left: 23px;
       }
 
       @include before {
@@ -1583,13 +1588,7 @@
 }
 
 .cases {
-  .section-title {
-  }
-
-  .caption {
-  }
-
-  .cases__body {
+  &__body {
     background-color: $colorWhite;
     box-shadow: 0px 15px 80px 0px #00000026;
     border-radius: 5px;
@@ -1617,6 +1616,7 @@
       font-size: 12px;
       line-height: 14px;
       margin-top: 30px;
+      padding-bottom: 80px;
     }
 
     strong {
@@ -1624,7 +1624,7 @@
     }
   }
 
-  .cases__row {
+  &__row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -1642,7 +1642,7 @@
     }
   }
 
-  .cases__col {
+  &__col {
     font-size: 18px;
     font-weight: 300;
     line-height: 21px;
@@ -1702,7 +1702,7 @@
     }
   }
 
-  .cases__title {
+  &__title {
     font-weight: 700;
     color: #d1a887;
 
@@ -1713,13 +1713,31 @@
     }
   }
 
-  .cases__bottom {
+  &__bottom {
     display: flex;
     justify-content: flex-end;
-    margin-top: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    z-index: 3;
+
+    @include responsive767 {
+      right: 10px;
+    }
   }
 
-  .site-link {
+  &-slider {
+    position: relative;
+    overflow: visible;
+
+    .swiper-slide {
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      &.swiper-slide-visible {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -1882,7 +1900,7 @@
   .caption {
   }
 
-  .contacts__list {
+  &__list {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
@@ -1898,7 +1916,7 @@
     }
   }
 
-  .contacts__item {
+  &__item {
     width: calc(100% / 5 - 65px);
 
     @include responsive1279 {
@@ -1913,6 +1931,13 @@
       width: 100%;
       display: flex;
       align-items: center;
+    }
+
+    &--phone {
+      a {
+        font-family: $fontJost;
+        color: $colorBlack-a7;
+      }
     }
 
     svg {
