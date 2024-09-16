@@ -175,10 +175,10 @@ $(document).ready(function () {
 
   // ..........................................
 
-  if ($("[data-fancybox]").length > 0) {
-    Fancybox.bind("[data-fancybox]", {
-      speedIn: 600,
-      speedOut: 600,
-    });
-  }
+  // if ($("[data-fancybox]").length > 0) {
+  //   Fancybox.bind("[data-fancybox]", {
+  //     speedIn: 600,
+  //     speedOut: 600,
+  //   });
+  // }
 });
