@@ -1269,6 +1269,11 @@ h4,
     line-height: 18px;
   }
 }
+@media (max-width: 1023px) {
+  .footer-menu {
+    width: 80%;
+  }
+}
 @media (max-width: 767px) {
   .footer-menu {
     order: 1;
@@ -1280,11 +1285,19 @@ h4,
 }
 .footer-menu ul {
   display: flex;
-  gap: 85px;
+  gap: 30px;
+  font-size: 15px;
 }
 @media (max-width: 1279px) {
   .footer-menu ul {
-    gap: 30px;
+    gap: 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 1023px) {
+  .footer-menu ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 767px) {
@@ -1297,7 +1310,7 @@ h4,
 }
 @media (max-width: 767px) {
   .footer-menu li {
-    width: calc(33.3333333333% - 30px);
+    width: calc(50% - 23px);
     white-space: nowrap;
   }
 }

@@ -54,6 +54,10 @@
     line-height: 18px;
   }
 
+  @include responsive1023 {
+    width: 80%;
+  }
+
   @include responsive767 {
     order: 1;
     font-size: 12px;
@@ -64,10 +68,17 @@
 
   ul {
     display: flex;
-    gap: 85px;
+    gap: 30px;
+    font-size: 15px;
 
     @include responsive1279 {
-      gap: 30px;
+      gap: 15px;
+      font-size: 12px;
+    }
+
+    @include responsive1023 {
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     @include responsive767 {
@@ -80,7 +91,7 @@
 
   li {
     @include responsive767 {
-      width: calc(100% / 3 - 30px);
+      width: calc(50% - 23px);
       white-space: nowrap;
     }
   }
