@@ -318,6 +318,11 @@ input[type=number]::-webkit-outer-spin-button {
   flex-direction: column;
   padding-top: 138px;
 }
+@media (max-width: 1279px) {
+  .main {
+    padding-top: 95px;
+  }
+}
 @media (max-width: 767px) {
   .main {
     padding-top: 85px;
@@ -537,8 +542,8 @@ picture img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
-  right: 100px;
-  top: 80px;
+  right: 30px;
+  top: 30px;
   display: flex;
   z-index: 10;
   font-weight: 400;
@@ -748,9 +753,11 @@ div::-webkit-scrollbar-thumb {
   background: transparent;
   border: 0;
   outline: none;
-  border-bottom: solid 1px rgb(255, 255, 255);
-  height: 36px;
+  border-bottom: solid 1px #cbcbcb;
+  height: 44px;
   width: 100%;
+  font-size: 18px;
+  line-height: 20px;
 }
 @media (max-width: 1279px) {
   .input-item input {
@@ -759,15 +766,18 @@ div::-webkit-scrollbar-thumb {
   }
 }
 .input-item input::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(27, 27, 27, 0.4);
 }
 .input-item textarea {
   background: transparent;
   border: 0;
   outline: none;
-  border-bottom: solid 1px rgb(255, 255, 255);
-  height: 116px;
+  border: solid 1px #cbcbcb;
+  height: 149px;
   width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
 }
 @media (max-width: 1279px) {
   .input-item textarea {
@@ -777,7 +787,7 @@ div::-webkit-scrollbar-thumb {
   }
 }
 .input-item textarea::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(27, 27, 27, 0.4);
 }
 
 .checkblock {
@@ -792,12 +802,19 @@ div::-webkit-scrollbar-thumb {
 .checkblock label {
   cursor: pointer;
   position: relative;
-  padding-left: 32px;
+  padding-left: 40px;
   display: block;
+  font-size: 14px;
 }
 @media (max-width: 1279px) {
   .checkblock label {
     padding-left: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .checkblock label {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 .checkblock label::before {
@@ -807,9 +824,9 @@ div::-webkit-scrollbar-thumb {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  width: 24px;
-  height: 24px;
-  border: solid 1px rgb(27, 27, 27);
+  width: 32px;
+  height: 32px;
+  border: solid 1px #cbcbcb;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -833,8 +850,8 @@ div::-webkit-scrollbar-thumb {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='11' viewBox='0 0 16 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.6693 1L5.5026 10.1667L1.33594 6' stroke='%231B1922' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
   background-position: center;
   background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   opacity: 0;
 }
 @media (max-width: 1279px) {
@@ -1096,7 +1113,13 @@ h4,
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-23%, -50%);
+  transform: translate(-90%, -50%);
+}
+@media (max-width: 1279px) {
+  .header .logo {
+    width: 113px;
+    height: 78px;
+  }
 }
 @media (max-width: 767px) {
   .header .logo {
@@ -1129,6 +1152,12 @@ h4,
   min-height: 125px;
   gap: 30px;
 }
+@media (max-width: 1279px) {
+  .menu__list {
+    gap: 15px;
+    min-height: 95px;
+  }
+}
 @media (max-width: 767px) {
   .menu__list {
     flex-direction: column;
@@ -1138,11 +1167,11 @@ h4,
     padding: 20px 0;
   }
 }
-.menu__item:nth-child(3) {
+.menu__item:nth-child(4) {
   margin-right: auto;
 }
 @media (max-width: 767px) {
-  .menu__item:nth-child(3) {
+  .menu__item:nth-child(4) {
     margin-right: initial;
   }
 }
@@ -1159,10 +1188,22 @@ h4,
 .menu__link:hover {
   text-decoration-color: rgb(113, 115, 116);
 }
-@media (max-width: 1279px) {
+@media (max-width: 1439px) {
   .menu__link {
     font-size: 15px;
     line-height: 18px;
+  }
+}
+@media (max-width: 1279px) {
+  .menu__link {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .menu__link {
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -3358,6 +3399,40 @@ h4,
 }
 .contacts__item a:hover {
   transform: scale(0.9);
+}
+
+#modal-call .modal__container {
+  max-width: 567px;
+}
+@media (max-width: 767px) {
+  #modal-call .modal__container {
+    max-width: 95%;
+  }
+}
+#modal-call .modal__content {
+  padding: 65px 40px;
+  border-radius: 3px;
+}
+@media (max-width: 767px) {
+  #modal-call .modal__content {
+    padding: 30px 15px;
+  }
+}
+#modal-call .input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+@media (max-width: 767px) {
+  #modal-call .input-form {
+    gap: 15px;
+  }
+}
+#modal-call .btn {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

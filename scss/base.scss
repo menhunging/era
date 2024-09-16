@@ -115,6 +115,10 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
   padding-top: 138px;
 
+  @include responsive1279 {
+    padding-top: 95px;
+  }
+
   @include responsive767 {
     padding-top: 85px;
   }
@@ -333,8 +337,8 @@ picture {
 .modal__close {
   @include transition(all 0.3s);
   position: absolute;
-  right: 100px;
-  top: 80px;
+  right: 30px;
+  top: 30px;
   display: flex;
   z-index: 10;
   font-weight: 400;
@@ -554,9 +558,11 @@ div {
     background: transparent;
     border: 0;
     outline: none;
-    border-bottom: solid 1px $colorWhite;
-    height: 36px;
+    border-bottom: solid 1px #cbcbcb;
+    height: 44px;
     width: 100%;
+    font-size: 18px;
+    line-height: 20px;
 
     @include responsive1279 {
       font-size: 12px;
@@ -564,7 +570,7 @@ div {
     }
 
     &::placeholder {
-      color: $colorWhite-a4;
+      color: $colorBlack-a4;
     }
   }
 
@@ -572,9 +578,12 @@ div {
     background: transparent;
     border: 0;
     outline: none;
-    border-bottom: solid 1px $colorWhite;
-    height: 116px;
+    border: solid 1px #cbcbcb;
+    height: 149px;
     width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
 
     @include responsive1279 {
       font-size: 12px;
@@ -583,7 +592,7 @@ div {
     }
 
     &::placeholder {
-      color: $colorWhite-a4;
+      color: $colorBlack-a4;
     }
   }
 }
@@ -606,17 +615,23 @@ div {
   label {
     cursor: pointer;
     position: relative;
-    padding-left: 32px;
+    padding-left: 40px;
     display: block;
+    font-size: 14px;
 
     @include responsive1279 {
       padding-left: 24px;
     }
 
+    @include responsive767 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
     @include before {
-      width: 24px;
-      height: 24px;
-      border: solid 1px $colorBlack;
+      width: 32px;
+      height: 32px;
+      border: solid 1px #cbcbcb;
       left: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -634,8 +649,8 @@ div {
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='11' viewBox='0 0 16 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.6693 1L5.5026 10.1667L1.33594 6' stroke='%231B1922' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
       background-position: center;
       background-repeat: no-repeat;
-      width: 24px;
-      height: 24px;
+      width: 32px;
+      height: 32px;
       opacity: 0;
 
       @include responsive1279 {

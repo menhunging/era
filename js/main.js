@@ -34,6 +34,7 @@ $(document).ready(function () {
     function menuAnhor(target) {
       if ($(".burger").hasClass("opened")) {
         $(".burger").removeClass("opened");
+        $(".menu").removeClass("opened");
         $("body").removeClass("hidden");
         $(".menu").stop().slideUp();
       }
@@ -124,14 +125,6 @@ $(document).ready(function () {
     $(".thisYear").text(date.getFullYear());
   }
 
-  if ($("[data-aos]").length > 0) {
-    AOS.init({
-      delay: 0,
-    });
-  }
-
-  // ..........................................
-
   if ($(".phone-input").length > 0) {
     $(".phone-input").map(function () {
       $(this).inputmask({
@@ -141,6 +134,12 @@ $(document).ready(function () {
         showMaskOnFocus: true,
         clearIncomplete: true,
       });
+    });
+  }
+
+  if ($("[data-aos]").length > 0) {
+    AOS.init({
+      delay: 0,
     });
   }
 
@@ -173,6 +172,8 @@ $(document).ready(function () {
       });
     });
   }
+
+  // ..........................................
 
   if ($("[data-fancybox]").length > 0) {
     Fancybox.bind("[data-fancybox]", {

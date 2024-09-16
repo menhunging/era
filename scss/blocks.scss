@@ -1981,3 +1981,39 @@
     }
   }
 }
+
+#modal-call {
+  .modal__container {
+    max-width: 567px;
+
+    @include responsive767 {
+      max-width: 95%;
+    }
+  }
+
+  .modal__content {
+    padding: 65px 40px;
+    border-radius: 3px;
+
+    @include responsive767 {
+      padding: 30px 15px;
+    }
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @include responsive767 {
+      gap: 15px;
+    }
+  }
+
+  .btn {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
