@@ -28,6 +28,10 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 
+  @include responsive1599 {
+    max-width: 1200px;
+  }
+
   @include responsive1279 {
     max-width: 930px;
   }

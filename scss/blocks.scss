@@ -122,6 +122,13 @@
       border-radius: 3px;
       overflow: hidden;
 
+      @include responsive1599 {
+        left: calc(50% + 65px);
+        top: 54px;
+        width: 353px;
+        height: 461px;
+      }
+
       @include responsive1279 {
         width: 262px;
         height: 403px;
@@ -150,6 +157,13 @@
       height: 307px;
       border-radius: 3px;
       overflow: hidden;
+
+      @include responsive1599 {
+        right: 0;
+        bottom: 25px;
+        width: 202px;
+        height: 237px;
+      }
 
       @include responsive1279 {
         width: 187px;

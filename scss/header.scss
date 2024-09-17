@@ -94,6 +94,11 @@
       text-decoration-color: $colorGray;
     }
 
+    @include responsive1599{
+      font-size: 15px;
+      line-height: 18px;
+    }
+
     @include responsive1439 {
       font-size: 15px;
       line-height: 18px;
