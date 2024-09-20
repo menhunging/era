@@ -12,8 +12,10 @@ body {
   }
 
   @include responsive767 {
-    font-size: 12px;
-    line-height: 16px;
+    // font-size: 12px;
+    // line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   &.modal-open,
@@ -633,8 +635,8 @@ div {
     }
 
     @include before {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       border: solid 1px #cbcbcb;
       left: 0;
       top: 50%;
@@ -653,8 +655,8 @@ div {
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='11' viewBox='0 0 16 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.6693 1L5.5026 10.1667L1.33594 6' stroke='%231B1922' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
       background-position: center;
       background-repeat: no-repeat;
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       opacity: 0;
 
       @include responsive1279 {
@@ -715,9 +717,9 @@ section {
 }
 
 .site-link {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 12px;
+  line-height: 18px;
   position: relative;
   display: flex;
   align-items: center;
@@ -740,5 +742,10 @@ section {
     background-size: contain;
     width: 20px;
     height: 10px;
+  }
+
+  @include responsive767 {
+    font-size: 12px;
+    line-height: 14px;
   }
 }

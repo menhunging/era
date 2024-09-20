@@ -140,6 +140,7 @@ $(document).ready(function () {
   if ($("[data-aos]").length > 0) {
     AOS.init({
       delay: 0,
+      duration: 800,
     });
   }
 
