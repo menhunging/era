@@ -201,7 +201,7 @@ a {
 body {
   font-family: "Raleway";
   background-color: rgb(255, 255, 255);
-  color: rgb(27, 27, 27);
+  color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -378,7 +378,7 @@ picture img {
   padding: 10px 0;
   padding-right: 15px;
   margin: 0;
-  color: rgb(27, 27, 27);
+  color: rgb(0, 0, 0);
 }
 .selectric .button {
   width: 48px;
@@ -402,10 +402,10 @@ picture img {
   outline: none;
 }
 .selectric-wrapper.selectric-hover .selectric {
-  border-color: rgb(27, 27, 27);
+  border-color: rgb(0, 0, 0);
 }
 .selectric-wrapper.selectric-open .selectric {
-  border-color: rgb(27, 27, 27);
+  border-color: rgb(0, 0, 0);
 }
 .selectric-wrapper.selectric-open .selectric .button {
   -moz-transform: scale(1, -1);
@@ -415,12 +415,12 @@ picture img {
   transform: scale(1, -1);
 }
 .selectric-wrapper.selectric-above .selectric-items {
-  border: solid 1px rgb(27, 27, 27);
+  border: solid 1px rgb(0, 0, 0);
 }
 .selectric-items {
   background: transparent;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(27, 27, 27);
+  border: 1px solid rgb(0, 0, 0);
   overflow: hidden;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -455,11 +455,11 @@ picture img {
 .selectric-scroll ul li.highlighted, .selectric-scroll ul li.selected {
   background: transparent !important;
   text-decoration: underline;
-  color: rgb(27, 27, 27);
+  color: rgb(0, 0, 0);
 }
 .selectric-scroll ul li:hover {
   background: transparent !important;
-  color: rgb(27, 27, 27);
+  color: rgb(0, 0, 0);
 }
 
 .selectric-open {
@@ -593,7 +593,7 @@ picture img {
   border-radius: 10px;
 }
 .modal__content .scroll::-webkit-scrollbar-thumb {
-  background: rgb(27, 27, 27);
+  background: rgb(0, 0, 0);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -655,7 +655,7 @@ div::-webkit-scrollbar-thumb {
   flex: 1;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(0, 0, 0);
 }
 
 .swiperBtnPrev {
@@ -750,7 +750,7 @@ div::-webkit-scrollbar-thumb {
 .burger-line {
   width: 100%;
   height: 1px;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(0, 0, 0);
   transition: transform 0.3s;
 }
 
@@ -771,7 +771,7 @@ div::-webkit-scrollbar-thumb {
   }
 }
 .input-item input::placeholder {
-  color: rgba(27, 27, 27, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 .input-item textarea {
   background: transparent;
@@ -792,7 +792,7 @@ div::-webkit-scrollbar-thumb {
   }
 }
 .input-item textarea::placeholder {
-  color: rgba(27, 27, 27, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .checkblock {
@@ -879,7 +879,7 @@ div::-webkit-scrollbar-thumb {
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  border: dashed 1px rgb(27, 27, 27);
+  border: dashed 1px rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -918,12 +918,12 @@ section {
   gap: 10px;
   text-decoration: underline;
   text-decoration-color: transparent;
-  color: rgb(27, 27, 27);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   transition: text-decoration 0.3s;
 }
 .site-link:hover {
-  text-decoration-color: rgb(27, 27, 27);
+  text-decoration-color: rgb(0, 0, 0);
 }
 .site-link::after {
   content: "";
@@ -951,7 +951,7 @@ section {
   -webkit-appearance: none;
   border-radius: 0;
   position: relative;
-  color: rgb(27, 27, 27);
+  color: rgb(0, 0, 0);
   border: 1px solid transparent;
   display: inline-block;
   transition: all 0.3s;
@@ -1022,7 +1022,7 @@ h6,
 h1,
 .caption--h1 {
   font-size: 70px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 74px;
   letter-spacing: -0.01em;
 }
@@ -1044,7 +1044,7 @@ h1,
 h2,
 .caption--h2 {
   font-size: 58px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 55px;
 }
 @media (max-width: 1279px) {
@@ -1057,8 +1057,8 @@ h2,
 @media (max-width: 767px) {
   h2,
   .caption--h2 {
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -1066,7 +1066,7 @@ h3,
 .caption--h3 {
   font-size: 43px;
   line-height: 44px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 1279px) {
   h3,
@@ -1078,8 +1078,8 @@ h3,
 @media (max-width: 767px) {
   h3,
   .caption--h3 {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 24px;
   }
 }
 
@@ -1262,11 +1262,12 @@ h4,
   text-decoration-color: transparent;
   text-decoration-skip-ink: none;
   transition: text-decoration 0.3s;
-  color: rgb(27, 27, 27);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
+  font-weight: 500;
 }
 .footer a:hover {
-  text-decoration-color: rgb(27, 27, 27);
+  text-decoration-color: rgb(0, 0, 0);
 }
 
 .footer-menu {
@@ -1369,7 +1370,11 @@ h4,
   justify-self: center;
   align-items: center;
   gap: 10px;
+  color: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
+}
+.footer-bottom .footer-bottom__center a {
+  color: rgba(0, 0, 0, 0.6);
 }
 .footer-bottom .footer-bottom__center .copy {
   font-family: "Jost";
@@ -1389,6 +1394,7 @@ h4,
   position: absolute;
   right: 0;
   top: 0;
+  color: rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 1279px) {
   .footer-bottom .footer-bottom__right {
@@ -1524,6 +1530,8 @@ h4,
   line-height: 36px;
   margin-top: 100px;
   max-width: 635px;
+  color: #000;
+  font-weight: 400;
 }
 @media (max-width: 1279px) {
   .grettings__text {
@@ -1776,10 +1784,10 @@ h4,
   .about__media {
     position: relative;
     top: 0;
-    left: 34px;
+    left: 50%;
     margin-top: -122px;
     height: auto;
-    width: 38%;
+    width: 80%;
     margin-bottom: 35px;
   }
 }
@@ -1815,7 +1823,7 @@ h4,
 }
 .about ul li span {
   font-family: "Jost";
-  color: rgba(27, 27, 27, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .about ul li + li {
   margin-top: 26px;
@@ -1828,6 +1836,12 @@ h4,
 @media (max-width: 1279px) {
   .about ul li {
     padding-left: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .about ul li {
+    font-weight: 400;
+    font-size: 15px;
   }
 }
 .about ul li::before {
@@ -1894,11 +1908,12 @@ h4,
   }
 }
 .values-list__text {
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
   max-width: 200px;
   margin: 16px auto 0;
   display: block;
+  font-size: 21px;
 }
 @media (max-width: 767px) {
   .values-list__text {
@@ -2336,6 +2351,7 @@ h4,
 }
 .foundation p {
   flex: 1;
+  font-weight: 400;
 }
 .foundation .num {
   font-family: "Mont";
@@ -2700,11 +2716,12 @@ h4,
 }
 @media (max-width: 767px) {
   .media-section .notebook {
-    width: 100%;
+    width: calc(100% + 50px);
     height: auto;
-    padding-top: 51.724137931%;
     margin: 0;
     margin-top: 130px;
+    padding-top: 64.1379310345%;
+    left: -25px;
   }
 }
 .media-section .notebook p {
@@ -2722,7 +2739,7 @@ h4,
 }
 @media (max-width: 767px) {
   .media-section .notebook p {
-    right: 0px;
+    right: 40px;
     bottom: auto;
     top: -103px;
     left: auto;
@@ -2996,7 +3013,7 @@ h4,
 }
 .reviews-slider .swiper-slide {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 27px;
   background-color: rgb(246, 246, 246);
   padding: 40px 35px;
@@ -3129,7 +3146,7 @@ h4,
 }
 .cases__col {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 21px;
   width: calc(33.3333333333% - 100px);
 }
@@ -3198,6 +3215,7 @@ h4,
 .cases__title {
   font-weight: 700;
   color: #d1a887;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .cases__title {
@@ -3349,7 +3367,6 @@ h4,
 .faq .faq__body {
   display: none;
   padding: 52px 0 52px 164px;
-  color: #828485;
 }
 @media (max-width: 1279px) {
   .faq .faq__body {
@@ -3426,7 +3443,7 @@ h4,
 }
 .contacts__item--phone a {
   font-family: "Jost";
-  color: rgba(27, 27, 27, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 1279px) {
   .contacts__item svg {

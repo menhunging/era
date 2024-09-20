@@ -32,6 +32,7 @@
     transition: text-decoration 0.3s;
     color: $colorBlack;
     text-transform: uppercase;
+    font-weight: 500;
 
     &:hover {
       text-decoration-color: $colorBlack;
@@ -132,7 +133,12 @@
     justify-self: center;
     align-items: center;
     gap: 10px;
+    color: $colorBlack-a6;
     text-transform: uppercase;
+
+    a{
+      color: $colorBlack-a6;
+    }
 
     .copy {
       font-family: $fontJost;
@@ -153,6 +159,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    color: $colorBlack-a6;
 
     @include responsive1279 {
       top: auto;
