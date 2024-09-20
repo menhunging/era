@@ -2972,21 +2972,21 @@ h4,
     max-width: 180px;
   }
 }
-.reviews .reviews-slider {
+.reviews-slider {
   margin-top: 90px;
   overflow: visible;
 }
 @media (max-width: 1279px) {
-  .reviews .reviews-slider {
+  .reviews-slider {
     margin-top: 50px;
   }
 }
 @media (max-width: 767px) {
-  .reviews .reviews-slider {
+  .reviews-slider {
     margin-top: 30px;
   }
 }
-.reviews .reviews-slider .swiper-slide {
+.reviews-slider .swiper-slide {
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
@@ -2998,32 +2998,34 @@ h4,
   height: auto;
 }
 @media (max-width: 1023px) {
-  .reviews .reviews-slider .swiper-slide {
+  .reviews-slider .swiper-slide {
     font-size: 16px;
     line-height: 20px;
   }
 }
 @media (max-width: 767px) {
-  .reviews .reviews-slider .swiper-slide {
+  .reviews-slider .swiper-slide {
     padding: 30px;
     font-size: 12px;
     line-height: 14px;
   }
 }
-.reviews .reviews-slider .swiper-slide p {
+.reviews-slider .swiper-slide p {
   margin-bottom: 20px;
 }
-.reviews .reviews-slider .swiper-slide .site-link {
+.reviews-slider .swiper-slide .site-link {
   margin-left: auto;
   margin-top: auto;
+  position: relative;
+  z-index: 3;
 }
-.reviews .reviews-slider .rating {
+.reviews-slider .rating {
   display: flex;
   align-items: center;
   gap: 6px;
   margin-bottom: 15px;
 }
-.reviews .reviews-slider .star {
+.reviews-slider .star {
   width: 19px;
   height: 18px;
   background-position: center;
@@ -3031,20 +3033,20 @@ h4,
   background-size: contain;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.0363 0.121094L10.9545 7.41537C10.9817 7.63135 11.2226 7.74738 11.4084 7.63398L17.6838 3.80394L12.5534 9.06972C12.4015 9.22563 12.461 9.48635 12.6655 9.56092L19.5726 12.0792L12.2569 11.3513C12.0402 11.3297 11.8735 11.5388 11.9427 11.7452L14.2803 18.7155L10.2882 12.5419C10.17 12.3592 9.90257 12.3592 9.78437 12.5419L5.79224 18.7155L8.12985 11.7452C8.19906 11.5388 8.03233 11.3297 7.81571 11.3513L0.5 12.0792L7.40708 9.56092C7.61159 9.48635 7.6711 9.22563 7.51919 9.06972L2.38878 3.80394L8.66416 7.63398C8.84997 7.74738 9.09091 7.63135 9.1181 7.41537L10.0363 0.121094Z' fill='url(%23paint0_linear_48_160)'/%3e%3cdefs%3e%3clinearGradient id='paint0_linear_48_160' x1='10.0363' y1='0.121094' x2='10.0363' y2='18.7155' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23828485'/%3e%3cstop offset='0.515' stop-color='%23828485'/%3e%3cstop offset='1' stop-color='%23828485'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e ");
 }
-.reviews .reviews-slider .star.ok {
+.reviews-slider .star.ok {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.0363 0.121094L10.9545 7.41537C10.9817 7.63135 11.2226 7.74738 11.4084 7.63398L17.6838 3.80394L12.5534 9.06972C12.4015 9.22563 12.461 9.48635 12.6655 9.56092L19.5726 12.0792L12.2569 11.3513C12.0402 11.3297 11.8735 11.5388 11.9427 11.7452L14.2803 18.7155L10.2882 12.5419C10.17 12.3592 9.90257 12.3592 9.78437 12.5419L5.79224 18.7155L8.12985 11.7452C8.19906 11.5388 8.03233 11.3297 7.81571 11.3513L0.5 12.0792L7.40708 9.56092C7.61159 9.48635 7.6711 9.22563 7.51919 9.06972L2.38878 3.80394L8.66416 7.63398C8.84997 7.74738 9.09091 7.63135 9.1181 7.41537L10.0363 0.121094Z' fill='url(%23paint0_linear_48_160)'/%3e%3cdefs%3e%3clinearGradient id='paint0_linear_48_160' x1='10.0363' y1='0.121094' x2='10.0363' y2='18.7155' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23FFF6EA'/%3e%3cstop offset='0.515' stop-color='%23F5A131'/%3e%3cstop offset='1' stop-color='%23AD641B'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e ");
 }
-.reviews .reviews__conrtrols {
+.reviews__conrtrols {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 @media (max-width: 767px) {
-  .reviews .reviews__conrtrols {
+  .reviews__conrtrols {
     display: none;
   }
 }
-.reviews .reviews__conrtrols .swiperBtnPrev {
+.reviews__conrtrols .swiperBtnPrev {
   min-width: 35px;
   width: 35px;
   height: 12px;
@@ -3052,7 +3054,7 @@ h4,
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='37' height='16' viewBox='0 0 37 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M36.25 8H1.25M1.25 8L8.25 15M1.25 8L8.25 1' stroke='black' stroke-width='1.75'/%3e%3c/svg%3e ");
 }
-.reviews .reviews__conrtrols .swiperBtnNext {
+.reviews__conrtrols .swiperBtnNext {
   min-width: 35px;
   width: 35px;
   height: 12px;

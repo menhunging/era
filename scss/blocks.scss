@@ -1540,7 +1540,7 @@
     }
   }
 
-  .reviews-slider {
+  &-slider {
     margin-top: 90px;
     overflow: visible;
 
@@ -1581,6 +1581,8 @@
       .site-link {
         margin-left: auto;
         margin-top: auto;
+        position: relative;
+        z-index: 3;
       }
     }
 
@@ -1605,7 +1607,7 @@
     }
   }
 
-  .reviews__conrtrols {
+  &__conrtrols {
     display: flex;
     align-items: center;
     gap: 15px;
