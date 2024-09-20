@@ -972,7 +972,7 @@ section {
   transition: all 0.3s;
   color: rgb(255, 255, 255);
   background: linear-gradient(90deg, #ad6f31 0%, #ffc480 21.5%, #d37d00 46.5%, #ffc57f 72.5%, #b26210 100%);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .btn-gradient:hover {
   transform: scale(0.95);
@@ -1544,7 +1544,7 @@ h4,
   top: 84px;
   width: 443px;
   height: 581px;
-  border-radius: 3px;
+  border-radius: 5px;
   overflow: hidden;
 }
 @media (max-width: 1599px) {
@@ -1580,7 +1580,7 @@ h4,
   bottom: 20px;
   width: 262px;
   height: 307px;
-  border-radius: 3px;
+  border-radius: 5px;
   overflow: hidden;
 }
 @media (max-width: 1599px) {
@@ -1754,7 +1754,7 @@ h4,
   position: absolute;
   top: calc(50% - 107px);
   left: -240px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 @media (max-width: 1279px) {
   .about__media {
@@ -1938,7 +1938,7 @@ h4,
   flex-direction: column;
   min-height: 685px;
   position: relative;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 @media (max-width: 1279px) {
   .work-result__item {
@@ -1961,7 +1961,7 @@ h4,
   width: calc(100% - 24px);
   height: calc(100% + 21px);
   border: solid 1px #aa8568;
-  border-radius: 3px;
+  border-radius: 5px;
   top: -12px;
   left: 12px;
   pointer-events: none;
@@ -2121,6 +2121,8 @@ h4,
   position: relative;
   width: 434px;
   height: 653px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 @media (max-width: 1279px) {
   .video-section .video-block {
@@ -2266,7 +2268,7 @@ h4,
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 5px 5px 0;
   overflow: hidden;
 }
 @media (max-width: 1023px) {
@@ -2793,7 +2795,7 @@ h4,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 @media (max-width: 1279px) {
   .services .services__item {
@@ -2990,21 +2992,10 @@ h4,
   line-height: 27px;
   background-color: rgb(246, 246, 246);
   padding: 40px 35px;
-  border-radius: 3px;
-  position: relative;
-  z-index: 1;
-}
-.reviews .reviews-slider .swiper-slide > a {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 7;
-  overflow: hidden;
-  text-indent: 200%;
-  white-space: nowrap;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 @media (max-width: 1023px) {
   .reviews .reviews-slider .swiper-slide {
@@ -3018,6 +3009,13 @@ h4,
     font-size: 12px;
     line-height: 14px;
   }
+}
+.reviews .reviews-slider .swiper-slide p {
+  margin-bottom: 20px;
+}
+.reviews .reviews-slider .swiper-slide .site-link {
+  margin-left: auto;
+  margin-top: auto;
 }
 .reviews .reviews-slider .rating {
   display: flex;
@@ -3470,7 +3468,7 @@ h4,
 }
 #modal-call .modal__content {
   padding: 65px 40px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 @media (max-width: 767px) {
   #modal-call .modal__content {
