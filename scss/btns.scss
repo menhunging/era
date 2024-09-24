@@ -26,14 +26,15 @@
   &-gradient {
     transition: all 0.3s;
     color: $colorWhite;
-    background: linear-gradient(
-      90deg,
-      #ad6f31 0%,
-      #ffc480 21.5%,
-      #d37d00 46.5%,
-      #ffc57f 72.5%,
-      #b26210 100%
-    );
+    background-color: $colorYellow;
+    // background: linear-gradient(
+    //   90deg,
+    //   #ad6f31 0%,
+    //   #ffc480 21.5%,
+    //   #d37d00 46.5%,
+    //   #ffc57f 72.5%,
+    //   #b26210 100%
+    // );
     border-radius: 5px;
 
     &:hover {

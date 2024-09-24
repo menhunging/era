@@ -10,8 +10,8 @@ $text = clear_data($_POST['message']);
 $subject = "Сообщение с сайта";
 
 $headers = [
-	"From: jatual.ru",
-	"Reply-To: jatual.ru",
+	"From: era-life.ru",
+	"Reply-To: era-life.ru",
 	"X-Mailer: PHP/" . phpversion(),
 	"MIME-Version: 1.0",
 	"Content-type: text/html; charset=utf-8"
@@ -62,6 +62,6 @@ function clear_data($val)
 	return $val;
 }
 
-print_r($message);
+// print_r($message);
 
 mail($to, $subject, $message, $headers_string);

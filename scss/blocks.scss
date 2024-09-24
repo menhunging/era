@@ -1049,15 +1049,15 @@
 
       &.active {
         a {
-          // background: #aa8568;
-          background: linear-gradient(
-            90deg,
-            #ad6f31 0%,
-            #ffc480 21.5%,
-            #d37d00 46.5%,
-            #ffc57f 72.5%,
-            #b26210 100%
-          );
+          background: $colorYellow;
+          // background: linear-gradient(
+          //   90deg,
+          //   #ad6f31 0%,
+          //   #ffc480 21.5%,
+          //   #d37d00 46.5%,
+          //   #ffc57f 72.5%,
+          //   #b26210 100%
+          // );
           color: $colorWhite;
         }
       }
@@ -1188,19 +1188,7 @@
     font-size: 60px;
     font-weight: 300;
     line-height: 77px;
-    // color: #aa8568;
-
-    background: linear-gradient(
-      90deg,
-      #ad6f31 0%,
-      #ffc480 21.5%,
-      #d37d00 46.5%,
-      #ffc57f 72.5%,
-      #b26210 100%
-    );
-    color: $colorWhite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $colorYellow;
 
     @include responsive1279 {
       font-size: 40px;
@@ -1689,6 +1677,7 @@
 
     strong {
       max-width: 1055px;
+      font-weight: 500;
     }
   }
 
