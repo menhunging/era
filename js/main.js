@@ -173,4 +173,27 @@ $(document).ready(function () {
       });
     });
   }
+
+  if ($("#site_form").length > 0) {
+    $("#site_form").on("submit", function (event) {
+      event.preventDefault();
+
+      let formData = $(this).serialize();
+
+      $.ajax({
+        url: "./form.php",
+        type: "POST",
+        data: formData,
+        success: function (response) {
+          MicroModal.close("modal-call");
+          MicroModal.show("modal-success");
+          $("#site_form input").val("");
+          $("#site_form textarea").val("");
+        },
+        error: function (error) {
+          console.error(error);
+        },
+      });
+    });
+  }
 });

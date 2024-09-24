@@ -947,6 +947,30 @@ section {
   }
 }
 
+#modal-success .modal__container {
+  max-width: 680px;
+}
+#modal-success .modal__content {
+  padding: 35px;
+}
+@media (max-width: 767px) {
+  #modal-success .modal__content {
+    padding: 15px;
+  }
+}
+#modal-success .modal-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  #modal-success .modal-custom {
+    font-size: 14px;
+  }
+}
+
 .btn {
   -webkit-appearance: none;
   border-radius: 0;
