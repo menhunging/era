@@ -27,14 +27,15 @@
     transition: all 0.3s;
     color: $colorWhite;
     background-color: $colorYellow;
-    // background: linear-gradient(
-    //   90deg,
-    //   #ad6f31 0%,
-    //   #ffc480 21.5%,
-    //   #d37d00 46.5%,
-    //   #ffc57f 72.5%,
-    //   #b26210 100%
-    // );
+    background: linear-gradient(
+      90deg,
+      #a38257 0%,
+      #b99960 23%,
+      #f9d692 51.5%,
+      #caa86b 75.5%,
+      #a6855a 100%
+    );
+
     border-radius: 5px;
 
     &:hover {
@@ -50,7 +51,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   filter: blur;
   background: linear-gradient(
     to left,
@@ -60,14 +61,14 @@
     transparent 100%
   );
   transform: translate(-100%, -25%) rotate(10deg);
-  animation: blick 3s infinite;
+  animation: blick 2s infinite;
 }
 
 @keyframes blick {
   0% {
     transform: translate(-100%, -25%) rotate(10deg);
   }
-  20% {
+  50% {
     transform: translate(100%, -25%) rotate(10deg);
   }
   100% {

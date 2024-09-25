@@ -1050,14 +1050,14 @@
       &.active {
         a {
           background: $colorYellow;
-          // background: linear-gradient(
-          //   90deg,
-          //   #ad6f31 0%,
-          //   #ffc480 21.5%,
-          //   #d37d00 46.5%,
-          //   #ffc57f 72.5%,
-          //   #b26210 100%
-          // );
+          background: linear-gradient(
+            90deg,
+            #a38257 0%,
+            #b99960 23%,
+            #f9d692 51.5%,
+            #caa86b 75.5%,
+            #a6855a 100%
+          );
           color: $colorWhite;
         }
       }
@@ -1188,7 +1188,17 @@
     font-size: 60px;
     font-weight: 300;
     line-height: 77px;
-    color: $colorYellow;
+    // color: $colorYellow;
+    background: linear-gradient(
+      90deg,
+      #a38257 0%,
+      #b99960 23%,
+      #f9d692 51.5%,
+      #caa86b 75.5%,
+      #a6855a 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @include responsive1279 {
       font-size: 40px;
