@@ -267,7 +267,7 @@
     }
 
     p {
-      font-family: $fontJost;
+      font-family: $fontMain;
       font-size: 32px;
       font-weight: 500;
       line-height: 32px;
@@ -376,7 +376,7 @@
       padding-left: 27px;
 
       span {
-        font-family: $fontJost;
+        font-family: $fontMain;
         color: $colorBlack-a7;
       }
 
@@ -901,7 +901,7 @@
   }
 
   .num {
-    font-family: $fontMont;
+    font-family: $fontMain;
     font-size: 80px;
     font-weight: 300;
     line-height: 102px;
@@ -1065,7 +1065,7 @@
 
     a {
       background: linear-gradient(90deg, #ffffff 0%, #f4f4f4 100%);
-      font-family: $fontMont;
+      font-family: $fontMain;
       font-size: 40px;
       font-weight: 300;
       line-height: 51px;
@@ -1184,7 +1184,7 @@
   }
 
   .num {
-    font-family: $fontMont;
+    font-family: $fontMain;
     font-size: 60px;
     font-weight: 300;
     line-height: 77px;
@@ -1498,7 +1498,7 @@
     }
 
     .price {
-      font-family: $fontJost;
+      font-family: $fontMain;
       font-size: 35px;
       font-weight: 400;
       line-height: 51px;
@@ -1884,7 +1884,7 @@
   }
 
   .num {
-    font-family: $fontJost;
+    font-family: $fontMain;
     font-size: 50px;
     font-weight: 300;
     line-height: 72px;
@@ -2006,7 +2006,7 @@
 
     &--phone {
       a {
-        font-family: $fontJost;
+        font-family: $fontMain;
         color: $colorBlack-a7;
       }
     }
@@ -2088,5 +2088,18 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+  }
+}
+
+.pdf {
+  width: 100%;
+  height: calc(100vh - 139px);
+
+  @include responsive1279 {
+    height: calc(100vh - 95px);
+  }
+
+  @include responsive767 {
+    height: calc(100vh - 105px);
   }
 }

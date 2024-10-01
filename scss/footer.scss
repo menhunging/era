@@ -141,7 +141,7 @@
     }
 
     .copy {
-      font-family: $fontJost;
+      font-family: $fontMain;
     }
 
     @include responsive767 {
@@ -175,7 +175,7 @@
     }
 
     strong {
-      font-family: $fontJost;
+      font-family: $fontMain;
       font-weight: 400;
     }
   }
