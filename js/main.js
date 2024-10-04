@@ -80,6 +80,7 @@ $(document).ready(function () {
 
   if ($(".cases-slider").length > 0) {
     const swiper = new Swiper(".cases-slider", {
+      autoHeight: true,
       slidesPerView: 1,
       spaceBetween: 32,
       watchSlidesProgress: true,
@@ -141,6 +142,8 @@ $(document).ready(function () {
     AOS.init({
       delay: 0,
       duration: 800,
+      offset: 100,
+      once: true,
     });
   }
 

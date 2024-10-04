@@ -136,12 +136,17 @@
     color: $colorBlack-a6;
     text-transform: uppercase;
 
-    a{
+    a {
       color: $colorBlack-a6;
     }
 
     .copy {
       font-family: $fontMain;
+
+      @include responsive767 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     }
 
     @include responsive767 {
@@ -160,11 +165,15 @@
     right: 0;
     top: 0;
     color: $colorBlack-a6;
+    font-size: 18px;
+    line-height: 24px;
 
     @include responsive1279 {
       top: auto;
       bottom: 0;
       gap: 16px;
+      font-size: 16px;
+      line-height: 18px;
     }
 
     @include responsive767 {
@@ -172,6 +181,8 @@
       text-align: left;
       align-items: flex-start;
       order: 1;
+      font-size: 12px;
+      line-height: 14px;
     }
 
     strong {
